@@ -10,7 +10,8 @@
       "Bash(git pull:*)",
       "Bash(start index.html)",
       "Bash(dir:*)",
-      "Bash(start https://ai-chatbox-Candice-codecub.streamlit.app)"
+      "Bash(start https://ai-chatbox-Candice-codecub.streamlit.app)",
+      "Read(//c/Users/super/**)"
     ],
     "deny": [],
     "ask": []
