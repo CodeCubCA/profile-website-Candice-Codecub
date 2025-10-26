@@ -510,7 +510,249 @@ body {
 /* Projects Section */
 .projects {
     padding: 6rem 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e6f3ff 50%, #ffffff 100%);
+}
+
+.mt-8 {
+    margin-top: 2rem;
+}
+
+.project-card-featured {
     background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 204, 255, 0.15);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(0, 204, 255, 0.1);
+}
+
+.project-card-featured:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px rgba(0, 204, 255, 0.25);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 0;
+}
+
+.project-screenshot {
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.screenshot-gradient-bg {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #00ccff 0%, #667eea 50%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.screenshot-gradient-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.screenshot-img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+    object-fit: contain;
+}
+
+.project-details {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-title-large {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #00ccff 0%, #667eea 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.project-description-detailed {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.tech-stack-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.tech-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.tech-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tech-badge.html {
+    background: linear-gradient(135deg, #e34c26 0%, #f06529 100%);
+    color: white;
+}
+
+.tech-badge.css {
+    background: linear-gradient(135deg, #264de4 0%, #2965f1 100%);
+    color: white;
+}
+
+.tech-badge.js {
+    background: linear-gradient(135deg, #f0db4f 0%, #f7df1e 100%);
+    color: #323330;
+}
+
+.tech-badge.canvas {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+    color: white;
+}
+
+.tech-badge.responsive {
+    background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
+    color: white;
+}
+
+.tech-badge.git {
+    background: linear-gradient(135deg, #f34f29 0%, #e44c29 100%);
+    color: white;
+}
+
+.tech-badge.github {
+    background: linear-gradient(135deg, #24292e 0%, #1b1f23 100%);
+    color: white;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-project {
+    padding: 0.9rem 1.8rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.btn-repo {
+    background: linear-gradient(135deg, #24292e 0%, #1b1f23 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(36, 41, 46, 0.3);
+}
+
+.btn-repo:hover {
+    background: transparent;
+    color: #24292e;
+    border-color: #24292e;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(36, 41, 46, 0.4);
+}
+
+.btn-live {
+    background: linear-gradient(135deg, #00ccff 0%, #667eea 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 204, 255, 0.3);
+}
+
+.btn-live:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+}
+
+.github-icon {
+    transition: transform 0.3s ease;
+}
+
+.btn-repo:hover .github-icon {
+    transform: rotate(360deg);
+}
+
+/* Responsive Design for Project Card */
+@media (max-width: 968px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-screenshot {
+        min-height: 300px;
+    }
+
+    .project-details {
+        padding: 2rem;
+    }
+
+    .project-title-large {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-details {
+        padding: 1.5rem;
+    }
+
+    .project-title-large {
+        font-size: 1.5rem;
+    }
+
+    .project-description-detailed {
+        font-size: 1rem;
+    }
+
+    .project-buttons {
+        flex-direction: column;
+    }
+
+    .btn-project {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 .projects-grid {
