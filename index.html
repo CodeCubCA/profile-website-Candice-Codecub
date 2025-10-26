@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candice Cui - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">CC</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#games" class="nav-link">Games</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="greeting">Hello, I'm</span>
+                    <span class="name">Candice Cui</span>
+                    <span class="role">Passionate Student Developer</span>
+                </h1>
+                <p class="hero-description">
+                    Hi! I'm a student who loves creating cool things with computers and code.
+                    I enjoy making websites and games that people can have fun with.
+                    My goal is to learn more about technology and build awesome projects!
+                </p>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <div class="computer-display">
+                            <div class="screen">
+                                <div class="code-lines">
+                                    <div class="code-line">
+                                        <span class="keyword">const</span>
+                                        <span class="variable">future</span>
+                                        <span class="operator">=</span>
+                                        <span class="string">"innovative"</span>
+                                    </div>
+                                    <div class="code-line">
+                                        <span class="keyword">function</span>
+                                        <span class="function">createEra</span>
+                                        <span class="bracket">()</span>
+                                        <span class="bracket">{</span>
+                                    </div>
+                                    <div class="code-line indent">
+                                        <span class="keyword">return</span>
+                                        <span class="string">"revolutionary"</span>
+                                    </div>
+                                    <div class="code-line">
+                                        <span class="bracket">}</span>
+                                    </div>
+                                    <div class="code-line">
+                                        <span class="comment">// Building tomorrow</span>
+                                    </div>
+                                </div>
+                                <div class="cursor"></div>
+                            </div>
+                            <div class="laptop-base"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-text">Scroll to explore</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I'm a young student who really loves working with computers and learning how to code.
+                        I like making websites, games, and other fun projects that people can enjoy.
+                        My favorite thing is figuring out how to solve problems and create something new.
+                        I want to keep learning and getting better at making cool stuff with technology!
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">1+</span>
+                            <span class="stat-label">Year Learning</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">11</span>
+                            <span class="stat-label">Age</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="games" class="games-section">
+        <div class="container">
+            <div class="sterling-games-header">
+                <h1>🎮 Sterling Games</h1>
+                <p>Welcome to Sterling Games - Your premium gaming platform featuring exciting interactive experiences!</p>
+                <div class="platform-stats">
+                    <div class="platform-stat">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Games Available</span>
+                    </div>
+                    <div class="platform-stat">
+                        <span class="stat-number">1.2K+</span>
+                        <span class="stat-label">Players</span>
+                    </div>
+                    <div class="platform-stat">
+                        <span class="stat-number">4.8⭐</span>
+                        <span class="stat-label">Rating</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="games-layout">
+                <div class="games-content">
+                    <div class="games-grid">
+                        <div class="game-card featured">
+                            <div class="game-icon">🏠</div>
+                            <div class="game-info">
+                                <h3>Real Estate Sales Master</h3>
+                                <p>Master the art of luxury property sales!</p>
+                                <div class="game-tags">
+                                    <span class="tag">Educational</span>
+                                    <span class="tag featured-tag">Featured</span>
+                                </div>
+                                <button class="play-btn" onclick="openRealEstateGame()">🎮 Play Now</button>
+                            </div>
+                        </div>
+
+
+
+                        <div class="game-card">
+                            <div class="game-icon">🎨</div>
+                            <div class="game-info">
+                                <h3>Logo Creator Studio</h3>
+                                <p>Design professional logos for companies!</p>
+                                <div class="game-tags">
+                                    <span class="tag">Creative</span>
+                                    <span class="tag">Design</span>
+                                </div>
+                                <button class="play-btn" onclick="openLogoCreator()">🎮 Play Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Real Estate Game Modal/Overlay -->
+            <div id="real-estate-modal" class="game-modal" style="display: none;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>🏠 Real Estate Sales Master</h2>
+                        <button class="close-btn" onclick="closeRealEstateGame()">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe id="real-estate-frame" src="real-estate-game.html" width="100%" height="800px" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Logo Creator Game Modal/Overlay -->
+            <div id="logo-creator-modal" class="game-modal" style="display: none;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>🎨 Logo Creator Studio</h2>
+                        <button class="close-btn" onclick="closeLogoCreator()">&times;</button>
+                    </div>
+                    <div class="modal-body logo-creator-body">
+                        <div class="logo-creator-container">
+                            <div class="company-prompt">
+                                <h3 id="company-name">TechFlow Solutions</h3>
+                                <p id="company-description">A modern software development company specializing in workflow automation tools</p>
+                                <p><strong>Industry:</strong> <span id="company-industry">Technology</span></p>
+                                <p><strong>Style Preference:</strong> <span id="company-style">Modern & Clean</span></p>
+                                <button id="new-company-btn" class="btn btn-secondary">🎲 New Company</button>
+                            </div>
+
+                            <div class="design-area">
+                                <div class="canvas-container">
+                                    <canvas id="logo-canvas" width="400" height="400"></canvas>
+                                    <div class="canvas-overlay">
+                                        <div class="grid-toggle">
+                                            <label>
+                                                <input type="checkbox" id="show-grid"> Show Grid
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="design-tools">
+                                    <div class="tool-section">
+                                        <h4>🔧 Tools</h4>
+                                        <div class="tool-buttons">
+                                            <button id="select-tool" class="tool-btn active" data-tool="select">✋ Select</button>
+                                            <button id="text-tool" class="tool-btn" data-tool="text">📝 Text</button>
+                                            <button id="shape-tool" class="tool-btn" data-tool="shape">⬛ Shape</button>
+                                            <button id="draw-tool" class="tool-btn" data-tool="draw">✏️ Draw</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="tool-section">
+                                        <h4>🎨 Colors</h4>
+                                        <div class="color-palette">
+                                            <div class="color-item active" data-color="#000000" style="background: #000000;"></div>
+                                            <div class="color-item" data-color="#ffffff" style="background: #ffffff; border: 2px solid #ccc;"></div>
+                                            <div class="color-item" data-color="#3498db" style="background: #3498db;"></div>
+                                            <div class="color-item" data-color="#e74c3c" style="background: #e74c3c;"></div>
+                                            <div class="color-item" data-color="#2ecc71" style="background: #2ecc71;"></div>
+                                            <div class="color-item" data-color="#f39c12" style="background: #f39c12;"></div>
+                                            <div class="color-item" data-color="#9b59b6" style="background: #9b59b6;"></div>
+                                            <div class="color-item" data-color="#34495e" style="background: #34495e;"></div>
+                                        </div>
+                                        <input type="color" id="custom-color" value="#000000">
+                                    </div>
+
+                                    <div class="tool-section">
+                                        <h4>📝 Text Options</h4>
+                                        <input type="text" id="text-input" placeholder="Enter text" value="LOGO">
+                                        <select id="font-family">
+                                            <option value="Arial">Arial</option>
+                                            <option value="Helvetica">Helvetica</option>
+                                            <option value="Times New Roman">Times New Roman</option>
+                                            <option value="Georgia">Georgia</option>
+                                            <option value="Verdana">Verdana</option>
+                                            <option value="Impact">Impact</option>
+                                        </select>
+                                        <input type="range" id="font-size" min="12" max="72" value="36">
+                                        <span id="font-size-display">36px</span>
+                                    </div>
+
+                                    <div class="tool-section">
+                                        <h4>✏️ Line Options</h4>
+                                        <label for="line-thickness">Thickness:</label>
+                                        <input type="range" id="line-thickness" min="1" max="20" value="2">
+                                        <span id="line-thickness-display">2px</span>
+                                    </div>
+
+                                    <div class="tool-section">
+                                        <h4>🔺 Shapes</h4>
+                                        <div class="shape-buttons">
+                                            <button class="shape-btn active" data-shape="rectangle">⬛ Rectangle</button>
+                                            <button class="shape-btn" data-shape="circle">⭕ Circle</button>
+                                            <button class="shape-btn" data-shape="oval">🥚 Oval</button>
+                                            <button class="shape-btn" data-shape="triangle">🔺 Triangle</button>
+                                            <button class="shape-btn" data-shape="star">⭐ Star</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="tool-section">
+                                        <h4>⚙️ Actions</h4>
+                                        <div class="action-buttons">
+                                            <button id="undo-btn" class="btn btn-secondary">↶ Undo</button>
+                                            <button id="redo-btn" class="btn btn-secondary">↷ Redo</button>
+                                            <button id="delete-selected" class="btn btn-warning">🗑️ Delete</button>
+                                            <button id="clear-canvas" class="btn btn-warning">🧹 Clear All</button>
+                                            <button id="download-logo" class="btn btn-success">💾 Download</button>
+                                            <button id="submit-logo" class="btn btn-primary">🚀 Submit Design</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="evaluation-section" id="evaluation-section" style="display: none;">
+                                <h3>🏆 Design Evaluation Results</h3>
+                                <div class="evaluation-results">
+                                    <div class="eval-item">
+                                        <div class="eval-category">
+                                            <strong>🎨 Creativity & Originality</strong>
+                                            <p class="eval-description">How unique and innovative your design elements are</p>
+                                        </div>
+                                        <span id="creativity-score" class="eval-score">0/10</span>
+                                    </div>
+                                    <div class="eval-item">
+                                        <div class="eval-category">
+                                            <strong>🎯 Brand Relevance</strong>
+                                            <p class="eval-description">How well your logo matches the company's industry and style</p>
+                                        </div>
+                                        <span id="relevance-score" class="eval-score">0/10</span>
+                                    </div>
+                                    <div class="eval-item">
+                                        <div class="eval-category">
+                                            <strong>💼 Professional Quality</strong>
+                                            <p class="eval-description">Overall polish, balance, and commercial viability</p>
+                                        </div>
+                                        <span id="professional-score" class="eval-score">0/10</span>
+                                    </div>
+                                    <div class="eval-item">
+                                        <div class="eval-category">
+                                            <strong>🌈 Color Harmony</strong>
+                                            <p class="eval-description">How well your color choices work together visually</p>
+                                        </div>
+                                        <span id="color-score" class="eval-score">0/10</span>
+                                    </div>
+                                </div>
+                                <div class="overall-score">
+                                    <h4>📊 Overall Score: <span id="overall-score">0.0/10</span></h4>
+                                    <div class="score-breakdown" id="score-breakdown">
+                                        <p><strong>Performance Summary:</strong></p>
+                                        <ul id="score-details"></ul>
+                                    </div>
+                                </div>
+                                <div class="final-result">
+                                    <h4 id="result-title">Great Design!</h4>
+                                    <p id="result-message">Your logo shows excellent creativity and brand understanding.</p>
+                                </div>
+                            </div>
+
+                            <div class="logo-gallery">
+                                <h3>🖼️ Your Logo Collection</h3>
+                                <div id="saved-logos" class="logo-grid">
+                                    <!-- Saved logos will appear here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Candice Cui. All rights reserved.</p>
+                <p>Designed & Built with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
